@@ -10,4 +10,6 @@ class PriceRange extends Model
     use HasFactory;
     public $table="price_rage";
     protected $fillable = ['rate1', 'rate2', 'rate3', 'rate4'];
+
+
 }

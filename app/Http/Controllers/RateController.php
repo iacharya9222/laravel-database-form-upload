@@ -18,4 +18,9 @@ class RateController extends Controller
         return 'hello form register';
         
     }
+    public function showForm()
+    {
+        $priceRange = PriceRange::latest()->first(); // Fetch the first row from the price_rage table
+        return view('viewrange', compact('priceRange'));
+    }
 }

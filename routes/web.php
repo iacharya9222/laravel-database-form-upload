@@ -23,3 +23,5 @@ Route::get('/rates',function(){
 });
 
 Route::post('/register',[RateController::class,'register']);
+
+route::get('/view',[RateController::class,'showForm']);
