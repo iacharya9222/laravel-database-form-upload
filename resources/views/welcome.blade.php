@@ -11,16 +11,18 @@
         border-collapse: collapse;
         width: 50%;
         margin: auto;
+        
         }
 
         td, th {
         border: 1px solid #dddddd;
         text-align: left;
         padding: 8px;
+        box-shadow: 10px;
         }
 
         tr:nth-child(even) {
-        background-color: #dddddd;
+        background-color: #7d93ff;
         }
 </style>
 </head>
@@ -39,6 +41,9 @@
         </td>
         <td>
                 <input name="rate1" type="number" id="rate1" />
+                @error('rate1')
+                <p> {{$message}}</p>
+                @enderror
         </td>
         </tr>
         <tr>
@@ -47,6 +52,9 @@
         </td>
         <td>
                 <input name="rate2" type="number" id="rate2" />
+                @error('rate2')
+                <p> {{$message}}</p>
+                @enderror
         </td>
         </tr>
         <tr>
@@ -55,6 +63,9 @@
         </td>
         <td>
                 <input name="rate3" type="number" id="rate3" />
+                @error('rate3')
+                <p> {{$message}}</p>
+                @enderror
         </td>
         </tr>
         <tr>
@@ -63,6 +74,9 @@
         </td>
         <td>
                 <input name="rate4" type="number" id="rate4" />
+                @error('rate1')
+                <p> {{$message}}</p>
+                @enderror
         </td>
         </tr>
         <tr>
